@@ -660,7 +660,7 @@ const PropertyDetail: NextPage = ({ initialComment, ...props }: any) => {
 PropertyDetail.defaultProps = {
 	initialComment: {
 		page: 1,
-		limit: 5,
+		limit: 4,
 		sort: 'createdAt',
 		direction: 'DESC',
 		search: {
