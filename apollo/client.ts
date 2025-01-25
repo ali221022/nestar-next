@@ -58,7 +58,7 @@ class LoggingWebSocket {
 	close() {
 		this.socket.close();
 	}
-}
+};
 
 function createIsomorphicLink() {
 	if (typeof window !== 'undefined') {
