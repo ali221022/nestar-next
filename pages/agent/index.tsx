@@ -126,7 +126,6 @@ const AgentList: NextPage = ({ initialInput, ...props }: any) => {
 			sweetMixinErrorAlert(err.message).then();
 		}
 	};
-
 	if (device === 'mobile') {
 		return <h1>AGENTS PAGE MOBILE</h1>;
 	} else {

@@ -53,7 +53,6 @@ const Community: NextPage = ({ initialInput, ...props }: T) => {
 			setTotalCount(data?.getBoardArticles?.metaCounter[0]?.total);
 		},
 	});
-
 	/** LIFECYCLES **/
 	useEffect(() => {
 		if (!query?.articleCategory)
@@ -179,13 +178,7 @@ const Community: NextPage = ({ initialInput, ...props }: T) => {
 										<Stack className="list-box">
 											{totalCount ? (
 												boardArticles?.map((boardArticle: BoardArticle) => {
-													return (
-														<CommunityCard
-															boardArticle={boardArticle}
-															key={boardArticle?._id}
-															likeArticleHandler={likeArticleHandler}
-														/>
-													);
+													return <CommunityCard boardArticle={boardArticle} key={boardArticle?._id} likeArticleHandler={likeArticleHandler}/>;
 												})
 											) : (
 												<Stack className={'no-data'}>
@@ -199,13 +192,7 @@ const Community: NextPage = ({ initialInput, ...props }: T) => {
 										<Stack className="list-box">
 											{totalCount ? (
 												boardArticles?.map((boardArticle: BoardArticle) => {
-													return (
-														<CommunityCard
-															boardArticle={boardArticle}
-															key={boardArticle?._id}
-															likeArticleHandler={likeArticleHandler}
-														/>
-													);
+													return <CommunityCard boardArticle={boardArticle} key={boardArticle?._id} likeArticleHandler={likeArticleHandler} />;
 												})
 											) : (
 												<Stack className={'no-data'}>
@@ -219,13 +206,7 @@ const Community: NextPage = ({ initialInput, ...props }: T) => {
 										<Stack className="list-box">
 											{totalCount ? (
 												boardArticles?.map((boardArticle: BoardArticle) => {
-													return (
-														<CommunityCard
-															boardArticle={boardArticle}
-															key={boardArticle?._id}
-															likeArticleHandler={likeArticleHandler}
-														/>
-													);
+													return <CommunityCard boardArticle={boardArticle} key={boardArticle?._id} likeArticleHandler={likeArticleHandler}/>;
 												})
 											) : (
 												<Stack className={'no-data'}>
@@ -239,13 +220,7 @@ const Community: NextPage = ({ initialInput, ...props }: T) => {
 										<Stack className="list-box">
 											{totalCount ? (
 												boardArticles?.map((boardArticle: BoardArticle) => {
-													return (
-														<CommunityCard
-															boardArticle={boardArticle}
-															key={boardArticle?._id}
-															likeArticleHandler={likeArticleHandler}
-														/>
-													);
+													return <CommunityCard boardArticle={boardArticle} key={boardArticle?._id} likeArticleHandler={likeArticleHandler}/>;
 												})
 											) : (
 												<Stack className={'no-data'}>
